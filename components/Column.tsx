@@ -2,6 +2,7 @@ import { PlusCircleIcon } from '@heroicons/react/24/solid';
 import React from 'react'
 import { Draggable, Droppable } from 'react-beautiful-dnd'
 import TodoCard from './TodoCard';
+import { useBoardStore } from '@/store/BoardStore';
 
 type Props = { 
     id: TypedColumn,
@@ -18,6 +19,7 @@ const idToColumnText: {
 }
 
 function Column({id, todos, index}: Props) {
+    const [searchString] = useBoardStore((state) => [state.searchString]);
   return (
     <Draggable draggableId={id} index={index}>
         {(provided) => (

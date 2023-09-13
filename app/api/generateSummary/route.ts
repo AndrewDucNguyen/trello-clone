@@ -6,7 +6,7 @@ export async function POST(request: Request) {
     const { todos } = await request.json()
 
     // Communicate with openAI GPT
-    const response = await openai.createChatCompletion({
+    const response = await openai.chat.completions.create({
         model: "gpt-3.5-turbo",
         temperature: 0.8,
         n: 1,
@@ -23,7 +23,7 @@ export async function POST(request: Request) {
         ]
     });
 
-    const { data } = response;
+    const { choices } = response;
 
-    return NextResponse.json(data.choices[0].message);
+    return NextResponse.json(choices[0].message);
 }

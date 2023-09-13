@@ -4,7 +4,6 @@ import { useBoardStore } from '@/store/BoardStore';
 import React, { useEffect } from 'react'
 import { DragDropContext, DropResult, Droppable } from 'react-beautiful-dnd';
 import Column from './Column';
-import { start } from 'repl';
 
 function Board() {
     const [board, getBoard, setBoardState, updateTodoInDB] = useBoardStore((state) => [

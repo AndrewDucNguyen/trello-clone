@@ -20,7 +20,7 @@ interface BoardState {
     setSearchString: (searchString: string) => void;
     setImage: (image: File | null ) => void;
 
-    addTask: (todo: string, columnId: TypedColumn, image?: File | null);
+    addTask: (todo: string, columnId: TypedColumn, image?: File | null) => void;
     deleteTask: (taskIndex: number, todoId: Todo, id: TypedColumn) => void;
     
 }

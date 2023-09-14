@@ -37,11 +37,11 @@ function Header() {
             <div className='absolute top-0 left-0 w-full h-96 bg-gradient-to-br from-pink-400 to-[#0055D1] rounded-md filter blur-3xl opacity-50 -z-50' />
             
             <Image 
-                src="https://links.papareact.com/c2cdd5"
+                src="/images/Trello_logo.png"
                 alt="Trello Logo"
                 width={300}
                 height={300}
-                className='w-44 md:w-56 pb-10 md:pb-0 object-contain'
+                className='w-36 md:w-40 pb-10 md:pb-0 object-contain'
             />
 
         

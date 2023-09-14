@@ -96,7 +96,7 @@ export const useBoardStore = create<BoardState>((set, get) => ({
                 title: todo,
                 status: columnId,
                 // Include image if it exists
-                ...(file && { image: JSON.stringify(file) }),
+                ...(file && { image: JSON.stringify(file) })
             }
         );
 
@@ -112,7 +112,7 @@ export const useBoardStore = create<BoardState>((set, get) => ({
                 status: columnId,
                 // Include image if it exists
                 ...(file && { image: file })
-            },
+            }
 
             const column = newColumns.get(columnId);
 

@@ -44,9 +44,7 @@ function Header() {
                 className='w-36 md:w-40 pb-10 md:pb-0 object-contain'
             />
 
-        
             <div className='flex items-center space-x-5 flex-1 justify-end w-full'>
-                {/* Search box */}
                 <form className="flex items-center space-x-5 bg-white rounded-md p-2 shadow-md 
                 flex-1 md:flex-initial">
                     <MagnifyingGlassIcon className='h-6 w-6 text-gray-400'/>
